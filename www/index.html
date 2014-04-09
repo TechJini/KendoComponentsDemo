@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kendo UI Mobile</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link href="css/kendo.common.min.css" rel="stylesheet" />
+        <link href="css/kendo.default.min.css" rel="stylesheet" />
+        <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+        <script src = "js/jquery.min.js"></script>
+        <script src = "js/kendo.mobile.min.js"></script>
+        <script src="js/kendo.all.min.js"></script>
+        <script src = "js/listview.js"></script>
+        <link rel="stylesheet" href="css/kendo.rtl.min.css">    
+        <link rel="stylesheet" href="css/kendo.dataviz.min.css">
+        <link rel="stylesheet" href="css/kendo.dataviz.default.min.css">
+       
+    </head>
+    <body>
+        <div data-role = "view" data-title = "Home" id = "index">
+            <header data-role = "header">
+                <div data-role = "navbar">
+                    <span data-role = "view-title"></span>
+                </div>
+            </header>
+            <ul data-role = "listview">
+                <li><a href = "view/listview.html">ListView</a></li>
+                <li><a href = "view/datepicker.html">Date Picker</a></li>
+                <li><a href = "view/switches.html">Switches</a></li>
+                <li><a href = "view/seekbar.html">Seek Bar</a></li>
+                <li><a href = "view/checkbox.html">Checkbox</a></li>
+                <li><a href = "view/radiogroup.html">Radio group</a></li>
+                <li><a href = "view/edittext.html">EditText/TextView</a></li>
+                <li><a href = "view/button.html">Button</a></li>
+                <li><a href = "view/picker.html">Dropdown</a></li>
+                <li><a href = "view/progressbar.html">Progressbar</a></li>
+                <li><a href = "view/popup.html">Dialogs</a></li>
+<!-- 
+                <li><a href = "view/tabview.html">TabView</a></li>     
+                <li><a href = "view/gridview.html">GridView/Collection view</a></li>
+                <li><a href = "view/spinner.html">Spinner</a></li>
+                <li><a href = "view/menu.html">Menu/Application Bar</a></li>   -->              
+                
+            </ul>
+        </div>
+        <style type="text/css">
+            .km-ios7 .km-navbar .km-button,
+            .km-ios7 .km-navbar .km-view-title,
+            .km-ios7 .km-button
+            {
+                background: transparent;
+                color: #000;
+            }
+            .km-ios7 .km-button
+            {
+                border-color: #fff;
+            }
+        </style>
+        <script>
+            var app  = new kendo.mobile.Application(document.body, { transition: "slide"});
+        </script>
+    </body>
+</html>

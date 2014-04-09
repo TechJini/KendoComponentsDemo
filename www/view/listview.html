@@ -1,0 +1,137 @@
+<div data-role="view" data-init="listViewPageInit" data-title="ListView">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">Home</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+    <ul id="listViewSample"></ul>
+</div>
+
+<div id="pullToRefreshView" data-role="view" data-init="pullToRefreshListViewInit" data-title="Pull To Refresh">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">ListView</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+     <ul id="pullToRefreshListViewSample"></ul>
+</div>
+
+<div id="sectionHeadersView" data-role="view" data-init="sectionHeadersViewInit" data-title="Section Headers">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">ListView</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+     <ul id="sectionHeadersViewSample"></ul>
+</div>
+
+<div id="groupedTableView" data-role="view" data-init="groupedTableViewInit" data-title="Grouped TableView">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">ListView</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+     <ul id="groupedTableViewSample"></ul>
+</div>
+
+<div id="searchBarView" data-role="view" data-init="searchBarViewInit" data-title="Search Bar">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">ListView</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+     <ul id="searchBarViewSample"></ul>
+</div>
+
+<div id="swipeToDeleteView" data-role="view" data-init="swipeToDeleteViewInit" data-title="Swipe To Delete">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left">ListView</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+     <ul id="swipeToDeleteViewSample"></ul>
+</div>
+
+<style type="text/css">
+    .listClass img
+    {
+        float: left;
+        width:3em;
+        border-radius: 3px;
+        float: left;
+        margin-right: 1.3em;
+    }
+    .listClass h3
+    {
+        font-size: .8em;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 0;
+        height: 1.3em;
+        overflow: hidden;
+    }
+    .listClass p
+    {
+        font-size: .6em;
+        margin: 0;
+        padding: .3em 0 0;
+    }
+    .listClass .km-button
+    {
+        position: absolute;
+        right: 0.6em;
+        top: 50%;
+    }
+    .km-ios7 .listClass .km-button
+    {
+         padding:0.6em;
+         margin-top: 0;
+         font-size: 0.8em;
+    }
+</style>
+
+<script id="listTemplate" type="text/x-kendo-template">
+        <a href="#:id#"><h3>#:name#</h3> </a>
+</script>
+
+<script id="pullToRefreshListTemplate" type="text/x-kendo-template">
+    <div class="listClass">
+        <img src="http://demos.telerik.com/kendo-ui/content/web/foods/#=ProductID#.jpg" alt="#=ProductName# image" />
+        <h3>#:ProductName#</h3>
+        <p>#:kendo.toString(UnitPrice, "c")#</p>
+        <a data-role="button" onclick="alert('#:ProductName# costs #:kendo.toString(UnitPrice, 'c')#')">ClickHere</a>
+    </div>
+</script>
+
+<script id="sectionHeaderslistTemplate" type="text/x-kendo-template">
+    <div class="listClass">
+        <h3 >${name}</h3>
+        <p >${description}</p>
+    </div>
+</script>
+
+<script id="groupedTableViewTemplate" type="text/x-kendo-template">
+    <div class="listClass">
+        <h3>${name}</h3>
+        <p>${description}</p>
+    </div>
+</script>
+
+<script id="searchBarTemplate" type="text/x-kendo-template">
+    <div class="listClass">
+        <h3>#:ProductName#</h3>
+        <p>#:kendo.toString(UnitPrice, "c")#</p>
+    </div>
+</script>
+
+<script id="swipeToDeleteTemplate" type="text/x-kendo-template">
+    <div class="listClass">
+        <a href="#:id#"><h3>#:name#</h3> </a>
+    </div>
+</script>

@@ -1,0 +1,10 @@
+
+*.DS_Store
+*.xcuserstate
+*.xcbkptlist
+/rhomobile/bin
+app.zip
+*build
+*.apk
+*.ipa
+*.xap

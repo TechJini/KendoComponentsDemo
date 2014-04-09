@@ -1,0 +1,22 @@
+<script>
+		function onClick() {
+			console.log("click");
+		}
+		function countClicks() {
+			var badge = parseInt(this.badge()); //get badge value
+			badge++;
+			this.badge(badge); //set new badge value
+		}
+</script>
+<div data-role="view" data-transition="slide">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a data-role="backbutton" data-align="left">Home</a>
+				Button
+			</div>
+	</div>
+
+	<p><a data-role="button" >Button</a><p>
+	<p><a data-role="button" data-badge="1" data-click="countClicks">Badge</a><p>
+	<p><a data-role="button" data-icon="add">Icon</a><p>
+</div>

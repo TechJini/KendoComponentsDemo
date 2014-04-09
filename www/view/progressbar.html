@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function onShow() {
+        app.pane.loader.show();
+        setTimeout(function() {
+ 	       app.pane.loader.hide(); //hide loading animation
+        }, 3000);
+    }
+</script>
+<div data-role="view" data-transition="slide">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a data-role="backbutton" data-align="left">Home</a>
+				Button
+			</div>
+	</div>
+	<a data-role="button" data-click="onShow" >ShowProgressBar</a>	
+</div>

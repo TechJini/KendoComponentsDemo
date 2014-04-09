@@ -1,0 +1,20 @@
+<div data-role="view" data-transition="slide">
+	<div data-role="header">
+		<div data-role="navbar">
+			<a data-role="backbutton" data-align="left">Home</a>
+			Switches
+		</div>
+	</div>
+	
+	<p>Switch <input data-role="switch" id="switch" checked="checked" /></li></p>
+	<a class="button" data-role="button" onclick="display();" >Click</a>
+	
+</div>
+<script>
+function display() {
+	// get a reference to the switch widget
+	var switchInstance = $("#switch").data("kendoMobileSwitch");
+	var state= switchInstance.check()? "On": "Off";
+	alert("Switch is "+ state );
+}
+</script>

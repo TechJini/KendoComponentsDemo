@@ -1,0 +1,36 @@
+{
+    "id": "KendoDemo",
+    "name": "KendoDemo",
+    "path": "/Applications/XAMPP/htdocs/Demos/KendoDemo",
+    "files": [
+        {
+            "name": "www/index.html",
+            "type": "html",
+            "lib": false,
+            "deps": [],
+            "id": "c4dcd208-bb6a-4df5-86e1-add60950f046",
+            "page": true
+        },
+        {
+            "name": "www/css/kendo.mobile.all.min.css",
+            "type": "css",
+            "lib": true,
+            "deps": [],
+            "id": "416871dc-2d40-44d5-901b-a394602c2f6c"
+        },
+        {
+            "name": "www/js/kendo.mobile.min.js",
+            "type": "js",
+            "lib": true,
+            "deps": [],
+            "id": "5ffcf6e5-62ed-4fad-bce2-ee2d929d57a7"
+        },
+        {
+            "name": "www/js/jquery.min.js",
+            "type": "js",
+            "lib": true,
+            "deps": [],
+            "id": "jquery"
+        }
+    ]
+}
